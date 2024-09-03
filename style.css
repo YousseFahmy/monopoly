@@ -1,9 +1,25 @@
-html, body, .fullHeight{
+html, body{
     height: 100%;
 }
 
-.fullWidth{
-    width: 100%;
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    font-size: 5vw;
+    z-index: 1;
+}
+
+
+.title:hover{
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {font-size: 5vw;}
+    50% {font-size: 4vw;}
+    100% {font-size: 5vw;}
 }
 
 .board{
@@ -13,21 +29,30 @@ html, body, .fullHeight{
     width: 40%;
 }
 
-.endRow{
-    flex-grow: 2;
+.boardRow{
+    padding-right: 7.5%;
+    padding-left: 0;
+    width: 100%;
+    max-width: 100%;
 }
 
-.boardRow{
-    /* background-color: rgb(221, 45, 75); */
-    /* border: 1px solid black; */
-    width: 100%;
+.endRow{
+    flex-grow: 2;
     padding: 0;
 }
 
 .boardSpace{
+    box-sizing: border-box;
     background-color: aquamarine;
     border: 1px solid black;
-    height: 100%;
+}
+
+.boardSpace:hover{
+    border: 1px solid white;
+}
+
+.shrink{
+    flex-shrink: 1;
 }
 
 .centerSpace{
