@@ -3,17 +3,28 @@ html, body{
 }
 
 .title{
+    border: 2px solid black;
+    background-color: red;
+    color: white;
+    font-size: inherit;
+}
+
+.titleHolder{
+    z-index: 1;
+    cursor: default;
     position: absolute;
+    font-size: 5vw;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
-    font-size: 5vw;
-    z-index: 1;
+    /* transition: font-size 4s; */
+    /* animation-direction: reverse; */
 }
 
 
-.title:hover{
+.titleHolder:hover{
     animation: pulse 1s infinite;
+    /* transition: font-size 4s; */
 }
 
 @keyframes pulse {
@@ -43,7 +54,7 @@ html, body{
 
 .boardSpace{
     box-sizing: border-box;
-    background-color: aquamarine;
+    background-color: rgb(204, 247, 232);
     border: 1px solid black;
 }
 
