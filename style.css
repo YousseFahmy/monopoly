@@ -1,3 +1,67 @@
-.title{
-    color: orangered;
+html, body, .fullHeight{
+    height: 100%;
+}
+
+.fullWidth{
+    width: 100%;
+}
+
+.board{
+    background-color: cadetblue;
+    border: 2px black solid;
+    aspect-ratio: 1/1;
+    width: 40%;
+}
+
+.endRow{
+    flex-grow: 2;
+}
+
+.boardRow{
+    /* background-color: rgb(221, 45, 75); */
+    /* border: 1px solid black; */
+    width: 100%;
+    padding: 0;
+}
+
+.boardSpace{
+    background-color: aquamarine;
+    border: 1px solid black;
+    height: 100%;
+}
+
+.centerSpace{
+    opacity: 0;
+}
+
+.yellowProperty{
+    background-color: yellow;
+}
+
+.redProperty{
+    background-color: red;
+}
+
+.orangeProperty{
+    background-color: orange;
+}
+
+.pinkProperty{
+    background-color: pink;
+}
+
+.blueProperty{
+    background-color: blue;
+}
+
+.brownProperty{
+    background-color: brown;
+}
+
+.cyanProperty{
+    background-color: cyan;
+}
+
+.limeProperty{
+    background-color: lime;
 }
